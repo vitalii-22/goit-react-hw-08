@@ -1,9 +1,8 @@
-import { useSelector } from 'react-redux';
-import { selectError } from '../../redux/contactsSlice';
+import { useSelector } from "react-redux";
+import { selectError } from "../../redux/contacts/selectors";
 
 const ErrorMessage = () => {
   const errorMessage = useSelector(selectError);
-  console.log(errorMessage);
 
   return <p>{errorMessage}</p>;
 };

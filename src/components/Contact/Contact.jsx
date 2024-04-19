@@ -1,13 +1,13 @@
-import { FiPhone } from 'react-icons/fi';
-import { FiUser } from 'react-icons/fi';
-import css from './Contact.module.css';
-import { useDispatch } from 'react-redux';
-import { deleteContact } from '../../redux/contactsOps';
+import { FiPhone } from "react-icons/fi";
+import { FiUser } from "react-icons/fi";
+import css from "./Contact.module.css";
+import { useDispatch } from "react-redux";
+import { deleteContact } from "../../redux/contacts/operations";
 
 const Contact = ({ id, name, number }) => {
   const dispatch = useDispatch();
 
-  const onDeleteContact = contactId => {
+  const onDeleteContact = (contactId) => {
     dispatch(deleteContact(contactId));
   };
 
