@@ -2,8 +2,6 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
 import { useDispatch } from "react-redux";
 
-import { IoPersonAddSharp } from "react-icons/io5";
-
 import css from "./RegistrationForm.module.css";
 import { register } from "../../redux/auth/operations";
 
@@ -95,7 +93,7 @@ const RegistrationForm = () => {
           title="Click to register user"
           aria-label="Add new mailbox"
         >
-          Sign Up <IoPersonAddSharp />
+          Sign Up
         </button>
       </Form>
     </Formik>

@@ -17,3 +17,18 @@
 //       <ContactList />
 //     </div>
 //   );
+
+import { Helmet } from "react-helmet-async";
+
+const ContactsPage = () => {
+  return (
+    <div>
+      <Helmet>
+        <title>Contacts</title>
+      </Helmet>
+      <h>ContactsPage</h>
+    </div>
+  );
+};
+
+export default ContactsPage;
