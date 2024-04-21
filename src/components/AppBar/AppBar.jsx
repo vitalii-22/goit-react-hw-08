@@ -6,7 +6,7 @@ import { AuthNav } from "../AuthNav/AuthNav";
 import UserMenu from "../UserMenu/UserMenu";
 
 export const AppBar = () => {
-  const { isLoggedIn } = useSelector(selectIsLoggedIn);
+  const isLoggedIn = useSelector(selectIsLoggedIn);
 
   return (
     <header className={css.header}>

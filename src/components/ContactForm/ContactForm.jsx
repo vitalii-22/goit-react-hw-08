@@ -25,8 +25,6 @@ const ContactForm = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = (data, formActions) => {
-    console.log("data: ", data);
-
     dispatch(addContact(data));
     formActions.resetForm();
   };
