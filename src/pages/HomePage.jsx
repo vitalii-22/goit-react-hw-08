@@ -22,7 +22,7 @@ const HomePage = () => {
         <title>Home</title>
       </Helmet>
       <div style={styles.container}>
-        <h1 style={styles.title}>Welcome to the phone book</h1>
+        <h1 style={styles.title}>Welcome to the phonebook</h1>
       </div>
     </div>
   );
